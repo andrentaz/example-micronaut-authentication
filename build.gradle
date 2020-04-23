@@ -40,6 +40,11 @@ dependencies {
     testImplementation "io.micronaut.test:micronaut-test-kotlintest"
     testImplementation "io.mockk:mockk:1.9.3"
     testImplementation "io.kotlintest:kotlintest-runner-junit5:3.3.2"
+
+    // security and JWT dependencies
+    implementation "io.micronaut.configuration:micronaut-security-oauth2"
+    annotationProcessor "io.micronaut:micronaut-security"
+    implementation "io.micronaut:micronaut-security-jwt"
 }
 
 test.classpath += configurations.developmentOnly
